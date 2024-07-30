@@ -1,8 +1,9 @@
+import {Container} from 'react-bootstrap';
 function App() {
   return (
-    <div className="App">
-     hello
-    </div>
+    <Container fluid>
+      hello
+    </Container>
   );
 }
 
