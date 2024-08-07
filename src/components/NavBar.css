@@ -5,6 +5,7 @@
 
 .nav-link {
   text-transform: uppercase;
+  /* color: white !important; */
 }
 .nav-link:hover {
   text-decoration: underline;

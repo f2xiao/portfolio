@@ -4,6 +4,15 @@
   padding: 0;
 }
 
-body {
+/* body {
+  padding: 1.5rem;
+} */
+
+header {
+  /* background: #3c3c3c; */
+  padding: 1.5rem;
+}
+
+main {
   padding: 1.5rem;
 }
