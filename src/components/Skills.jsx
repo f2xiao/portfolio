@@ -90,11 +90,8 @@ const Skills = () => {
       initial={{ opacity: 0, y: 300 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.1, delay: 2 }}
-      style={{ paddingTop: "5rem", height: "80vh" }}
     >
-      <h5
-        style={{ fontWeight: 300, paddingBottom: "5rem", textAlign: "center" }}
-      >
+      <h5 style={{ fontWeight: 300, paddingBottom: "5rem" }}>
         Welcome to my personal website! Here you can learn more about me and my
         work.
       </h5>
@@ -113,7 +110,7 @@ const Skills = () => {
                   // border: "1px solid black",
                   boxShadow: "0 0.25rem 0.5rem rgba(0, 0, 0, 0.5)",
                   height: "100%",
-                  paddingTop: "1rem",
+                  // paddingTop: "1rem",
                   borderRadius: "1rem",
                 }}
               >

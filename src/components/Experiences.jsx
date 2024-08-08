@@ -1,15 +1,8 @@
 import React from "react";
 const Experiences = () => {
   return (
-    <div style={{ height: "100vh" }}>
+    <div>
       <h2>Experiences</h2>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
     </div>
   );
 };

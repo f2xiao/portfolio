@@ -19,10 +19,10 @@ const SubHeading = () => {
             1000,
             "A Fullstack developer",
             1500,
-            "A Fullstack developer based",
+            "A Fullstack developer based in",
             2000,
-            "A Fullstack developer based in Waterloo,ON",
-            3000,
+            "A Fullstack developer based in Waterloo, ON",
+            2500,
           ]}
           loop={1}
           wrapper="h4"
