@@ -33,9 +33,10 @@ const BackToTop = () => {
           position: "fixed",
           bottom: "3.125rem",
           right: "1.875rem",
-          backgroundColor: "#28a745", // Custom green background
-          color: "#fff", // White text
-          borderColor: "#28a745",
+          backgroundColor: "#c3c3c3", // Custom green background
+          color: "black", // White text
+          border: "none",
+          zIndex: "99",
         }}
       >
         Back to Top

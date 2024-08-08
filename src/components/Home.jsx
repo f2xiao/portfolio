@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import SubHeading from "./SubHeading";
 import Skills from "./Skills";
 import Experiences from "./Experiences";
 import { useInView } from "framer-motion";
 import { useLocation } from "react-router";
+import { TypeAnimation } from "react-type-animation";
 import "./Home.css";
 
 function Section({ id, children }) {
@@ -49,17 +50,12 @@ const Home = () => {
         }}
       >
         <div style={{ flexBasis: "25%" }}>
-          <Typical
-            steps={[
-              "Hello",
-              500,
-              "Hello I am",
-              1000,
-              "Hello I am Fangfang!",
-              1500,
-            ]}
-            loop={1}
+          <TypeAnimation
+            sequence={["Hello, I'm Fangfang!"]}
             wrapper="h1"
+            cursor={false}
+            repeat={0}
+            style={{ fontSize: "2em" }}
           />
           <p style={{ paddingTop: "1rem" }}></p>
           <SubHeading />

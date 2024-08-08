@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Typical from "react-typical";
+import { TypeAnimation } from "react-type-animation";
+// import Typical from "react-typical";
 
 const SubHeading = () => {
   const [isHeadingMounted, setIsHeadingMounted] = useState(false);
@@ -13,19 +14,15 @@ const SubHeading = () => {
   return (
     <>
       {isHeadingMounted && (
-        <Typical
-          steps={[
-            "A Fullstack",
-            1000,
-            "A Fullstack developer",
-            1500,
-            "A Fullstack developer based in",
-            2000,
-            "A Fullstack developer based in Waterloo, ON",
-            2500,
+        <TypeAnimation
+          sequence={[
+            "A Full Stack developer based in Waterloo, ON", // Types
+            1000, // Waits 1 second
           ]}
-          loop={1}
-          wrapper="h4"
+          wrapper="h1"
+          cursor={false}
+          repeat={0}
+          style={{ fontSize: "2em" }}
         />
       )}
     </>
