@@ -18,16 +18,20 @@ function NavBar() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link as={Link} to="/">
-            Home
-          </Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
           {["work", "about", "experience", "contact"].map((name) => (
-            <Nav.Link as={Link} to={`#${name}`}>
+            <Nav.Link href={`#${name}`} key={name}>
               {name}
             </Nav.Link>
           ))}
           <Nav.Link
-            as={Link}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://f2xiao.github.io"
+          >
+            Blogs
+          </Nav.Link>
+          <Nav.Link
             target="_blank"
             rel="noopener noreferrer"
             to="/Fangfang Xiao Resume.pdf"

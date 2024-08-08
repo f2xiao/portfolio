@@ -6,25 +6,29 @@ const SubHeading = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsHeadingMounted(true);
-    }, 5000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <p>
+    <>
       {isHeadingMounted && (
         <Typical
           steps={[
-            "A",
+            "A Fullstack",
             1000,
-            "A Fullstack developer based in Waterloo, ON",
-            40000,
+            "A Fullstack developer",
+            1500,
+            "A Fullstack developer based",
+            2000,
+            "A Fullstack developer based in Waterloo,ON",
+            3000,
           ]}
           loop={1}
           wrapper="h4"
         />
       )}
-    </p>
+    </>
   );
 };
 
