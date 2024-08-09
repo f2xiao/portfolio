@@ -1,0 +1,22 @@
+.skills_logo {
+  transition: ease-in-out 500ms;
+}
+.skills_logo:hover {
+  transform: scale(1.1);
+}
+
+/* .skills_container {
+  transition: filter 300ms;
+}
+
+.skills_container:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+} */
+
+/* .skills_container {
+  transition: box-shadow 300ms ease;
+}
+
+.skills_container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+} */

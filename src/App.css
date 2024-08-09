@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* body {
+  padding: 1.5rem;
+} */
+
+header {
+  /* background: #3c3c3c; */
+  padding: 1.5rem;
+}
+
+main {
+  padding: 1.5rem;
+}
