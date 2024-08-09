@@ -22,7 +22,14 @@ const BackToTop = () => {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    window.location.hash = "";
+    if (window.location.hash) {
+      // Remove the hash
+      window.history.replaceState(
+        null,
+        null,
+        window.location.href.split("#")[0]
+      );
+    }
   };
   return (
     showButton && (

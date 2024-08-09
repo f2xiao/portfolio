@@ -108,7 +108,7 @@ const Skills = () => {
                   alignContent: "center",
                   justifyContent: "center",
                   // border: "1px solid black",
-                  boxShadow: "0 0.25rem 0.5rem rgba(0, 0, 0, 0.5)",
+                  boxShadow: "0 0.25rem 0.5rem rgba(0, 0, 0, 0.25)",
                   height: "100%",
                   // paddingTop: "1rem",
                   borderRadius: "1rem",

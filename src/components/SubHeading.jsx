@@ -22,7 +22,7 @@ const SubHeading = () => {
           wrapper="h1"
           cursor={false}
           repeat={0}
-          style={{ fontSize: "2em" }}
+          style={{ fontSize: "1.5rem" }}
         />
       )}
     </>

@@ -3,9 +3,11 @@ import React, { useRef } from "react";
 import SubHeading from "./SubHeading";
 import Skills from "./Skills";
 import Experiences from "./Experiences";
+import Contact from "./Contact";
 import { useInView } from "framer-motion";
 import { useLocation } from "react-router";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 import "./Home.css";
 
 function Section({ id, children }) {
@@ -35,10 +37,7 @@ const Home = () => {
   return (
     <main
       style={{
-        paddingTop: "5rem",
-        paddingLeft: "2rem",
-        paddingRight: "2rem",
-        textAlign: "center",
+        padding: "5rem 2rem 0 2rem",
       }}
     >
       <section
@@ -46,29 +45,65 @@ const Home = () => {
           display: "flex",
           alignContent: "space-between",
           flexDirection: "column",
-          height: "95vh",
+          textAlign: "center",
+          height: "90vh",
         }}
       >
-        <div style={{ flexBasis: "25%" }}>
+        <div style={{ flexBasis: "15%" }}>
           <TypeAnimation
             sequence={["Hello, I'm Fangfang!"]}
             wrapper="h1"
             cursor={false}
             repeat={0}
-            style={{ fontSize: "2em" }}
           />
           <p style={{ paddingTop: "1rem" }}></p>
           <SubHeading />
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 300 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.1, delay: 2 }}
+          style={{
+            flexBasis: "10%",
+            display: "flex",
+            justifyContent: "center",
+            gap: "1rem",
+          }}
+        >
+          <a
+            href="https://www.linkedin.com/in/fangfang-xiao"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg"
+              width="32"
+              height="32"
+              style={{ maxWidth: "100%" }}
+              alt="linkedin-icon"
+            />
+          </a>
+          <a
+            href="https://www.github.com/f2xiao"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg"
+              width="32"
+              height="32"
+              style={{ maxWidth: "100%" }}
+              alt="github-icon"
+            />
+          </a>
+        </motion.div>
         <Skills />
       </section>
       <Section id="experience">
         <Experiences />
       </Section>
       <Section id="contact">
-        <div>
-          <h2>Contact</h2>
-        </div>
+        <Contact />
       </Section>
     </main>
   );
