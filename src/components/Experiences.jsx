@@ -8,8 +8,13 @@ import "react-vertical-timeline-component/style.min.css";
 const Experiences = () => {
   const experiences = [
     {
-      time: "",
+      time: "June 2024 - Present",
       title: "Freelancer",
+      subtitle: "Full Stack Developer",
+      details: [
+        "Desgined and created websites for small bussinesses. Currently working on the offical website of mobility service company. ",
+        "Led client meetings and served as the primary point of contact, effectively communicating project progress, requirements, and updates, ensuring client satisfaction and alignment with their goals",
+      ],
     },
   ];
   const bgColor = "white";
