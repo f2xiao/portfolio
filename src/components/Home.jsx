@@ -14,6 +14,7 @@ function Section({ id, children }) {
   let location = useLocation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  console.log(isInView);
   return (
     <section
       id={id}
@@ -37,16 +38,17 @@ const Home = () => {
   return (
     <main
       style={{
-        padding: "5rem 2rem 0 2rem",
+        padding: "2rem 2rem 0 2rem",
       }}
     >
       <section
         style={{
           display: "flex",
-          alignContent: "space-between",
+          alignContent: "flex-start",
           flexDirection: "column",
           textAlign: "center",
-          height: "90vh",
+          height: "75vh",
+          marginBottom: "5rem",
         }}
       >
         <div style={{ flexBasis: "15%" }}>

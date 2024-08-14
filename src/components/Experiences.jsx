@@ -4,12 +4,18 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import "./Experiences.css";
 
 const Experiences = () => {
   const experiences = [
     {
-      time: "",
+      time: "June 2024 - Present",
       title: "Freelancer",
+      subtitle: "Full Stack Developer",
+      details: [
+        "Desgined and created websites for small bussinesses. Currently working on the offical website of mobility service company. ",
+        "Led client meetings and served as the primary point of contact, effectively communicating project progress, requirements, and updates, ensuring client satisfaction and alignment with their goals",
+      ],
     },
   ];
   const bgColor = "white";
@@ -20,7 +26,22 @@ const Experiences = () => {
   };
   return (
     <div>
-      <h2 style={{ textAlign: "center", padding: "3rem 0" }}>Experiences</h2>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "1rem",
+          margin: "0 auto",
+          width: "90%",
+        }}
+      >
+        <hr style={{ width: "33.3%" }} />
+        <h2 style={{ textAlign: "center", padding: "3rem 0", width: "33.3%" }}>
+          Experiences
+        </h2>
+        <hr style={{ width: "33.3%" }} />
+      </div>
       <VerticalTimeline lineColor="#c3c3c3">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

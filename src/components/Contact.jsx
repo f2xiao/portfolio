@@ -62,10 +62,7 @@ const Contact = () => {
     }
   };
   return (
-    <div
-      className="container mt-5"
-      style={{ height: "100vh", paddingTop: "2rem" }}
-    >
+    <div className="container mt-5" style={{ height: "100vh" }}>
       <h2 style={{ textAlign: "center", padding: "3rem 0" }}>Contact</h2>
       {alert.show && <Alert variant={alert.variant}>{alert.message}</Alert>}
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
