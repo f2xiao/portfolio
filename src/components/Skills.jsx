@@ -62,9 +62,9 @@ function SkillBadge({ skill }) {
     >
       <img
         style={{
-          borderRadius: "2px",
-          width: "40px",
-          height: "40px",
+          borderRadius: ".125rem",
+          width: "1.875rem",
+          height: "1.875rem",
           marginBottom: "0.5rem",
         }}
         src={logo}
