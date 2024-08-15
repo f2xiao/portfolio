@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Form, Button, Row, Col, Spinner, Alert } from "react-bootstrap";
+import SectionTitle from "./SectionTitle";
 
 const Contact = () => {
   const [validated, setValidated] = useState(false);
@@ -62,76 +63,79 @@ const Contact = () => {
     }
   };
   return (
-    <div className="container mt-5" style={{ height: "100vh" }}>
-      <h2 style={{ textAlign: "center", padding: "3rem 0" }}>Contact</h2>
-      {alert.show && <Alert variant={alert.variant}>{alert.message}</Alert>}
-      <Form noValidate validated={validated} onSubmit={handleSubmit}>
-        <Row className="mb-3">
-          <Form.Group as={Col} md="6" controlId="validationName">
-            <Form.Label>Name</Form.Label>
+    <div style={{ minHeight: "100vh" }}>
+      {/* <h2 style={{ textAlign: "center", padding: "3rem 0" }}>Contact</h2> */}
+      <SectionTitle title="contact" />
+      <div style={{ width: "80%", margin: "0 auto" }}>
+        {alert.show && <Alert variant={alert.variant}>{alert.message}</Alert>}
+        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+          <Row className="mb-3">
+            <Form.Group as={Col} md="6" controlId="validationName">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                required
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                value={formData.name}
+                onChange={handleChange}
+              />
+              <Form.Control.Feedback type="invalid">
+                Please provide your name.
+              </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} md="6" controlId="validationEmail">
+              <Form.Label>Email</Form.Label>
+              <Form.Control
+                required
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+              <Form.Control.Feedback type="invalid">
+                Please provide a valid email.
+              </Form.Control.Feedback>
+            </Form.Group>
+          </Row>
+
+          <Form.Group className="mb-3" controlId="validationMessage">
+            <Form.Label>Message</Form.Label>
             <Form.Control
               required
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              value={formData.name}
+              as="textarea"
+              rows={4}
+              name="message"
+              placeholder="Enter your message"
+              value={formData.message}
               onChange={handleChange}
+              style={{ resize: "vertical" }}
             />
             <Form.Control.Feedback type="invalid">
-              Please provide your name.
+              Please enter a message.
             </Form.Control.Feedback>
           </Form.Group>
-          <Form.Group as={Col} md="6" controlId="validationEmail">
-            <Form.Label>Email</Form.Label>
-            <Form.Control
-              required
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-            <Form.Control.Feedback type="invalid">
-              Please provide a valid email.
-            </Form.Control.Feedback>
-          </Form.Group>
-        </Row>
 
-        <Form.Group className="mb-3" controlId="validationMessage">
-          <Form.Label>Message</Form.Label>
-          <Form.Control
-            required
-            as="textarea"
-            rows={4}
-            name="message"
-            placeholder="Enter your message"
-            value={formData.message}
-            onChange={handleChange}
-            style={{ resize: "vertical" }}
-          />
-          <Form.Control.Feedback type="invalid">
-            Please enter a message.
-          </Form.Control.Feedback>
-        </Form.Group>
-
-        <Button
-          type="submit"
-          disabled={loading}
-          style={{ background: "#c3c3c3", border: "none", color: "black" }}
-        >
-          {loading ? (
-            <Spinner
-              as="span"
-              animation="border"
-              size="sm"
-              role="status"
-              aria-hidden="true"
-            />
-          ) : (
-            "Send"
-          )}
-        </Button>
-      </Form>
+          <Button
+            type="submit"
+            disabled={loading}
+            style={{ background: "#c3c3c3", border: "none", color: "black" }}
+          >
+            {loading ? (
+              <Spinner
+                as="span"
+                animation="border"
+                size="sm"
+                role="status"
+                aria-hidden="true"
+              />
+            ) : (
+              "Send"
+            )}
+          </Button>
+        </Form>
+      </div>
     </div>
   );
 };
