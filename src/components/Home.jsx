@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 // import Typical from "react-typical";
 import SubHeading from "./SubHeading";
 import Skills from "./Skills";
+import Work from "./Work";
 import Experiences from "./Experiences";
 import Contact from "./Contact";
 import { useInView } from "framer-motion";
@@ -14,7 +15,7 @@ function Section({ id, children }) {
   let location = useLocation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  console.log(isInView);
+  console.log(id, isInView);
   return (
     <section
       id={id}
@@ -47,7 +48,7 @@ const Home = () => {
           alignContent: "flex-start",
           flexDirection: "column",
           textAlign: "center",
-          height: "75vh",
+          minHeight: "80vh",
           marginBottom: "5rem",
         }}
       >
@@ -70,6 +71,7 @@ const Home = () => {
             display: "flex",
             justifyContent: "center",
             gap: "1rem",
+            margin: "2rem 0",
           }}
         >
           <a
@@ -101,6 +103,9 @@ const Home = () => {
         </motion.div>
         <Skills />
       </section>
+      <Section id="work">
+        <Work />
+      </Section>
       <Section id="experience">
         <Experiences />
       </Section>
