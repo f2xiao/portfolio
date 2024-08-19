@@ -25,7 +25,7 @@ const Work = () => {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    // alignItems: "center",
+                    alignItems: "center",
                     height: "100%",
                   }}
                 >
@@ -91,7 +91,7 @@ const Work = () => {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    // alignItems: "center",
+                    alignItems: "center",
                     height: "100%",
                   }}
                 >
@@ -157,7 +157,7 @@ const Work = () => {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    // alignItems: "center",
+                    alignItems: "center",
                     height: "100%",
                   }}
                 >
