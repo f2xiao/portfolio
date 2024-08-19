@@ -20,7 +20,7 @@ const Work = () => {
         <Row style={{ marginBottom: "4rem" }}>
           <Col md={6}>
             <Row>
-              <Col md={4}>
+              <Col md={6}>
                 <div
                   style={{
                     display: "flex",
@@ -31,8 +31,8 @@ const Work = () => {
                 >
                   <div
                     style={{
-                      width: "100px",
-                      height: "100px",
+                      width: "200px",
+                      height: "200px",
                       backgroundColor: "pink",
                     }}
                   >
@@ -40,11 +40,11 @@ const Work = () => {
                   </div>
                 </div>
               </Col>
-              <Col md={8}>
+              <Col md={6}>
                 <h3>Title</h3>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nostrum, soluta veniam esse aut perspiciatis eaque.
+                  A next-to-watch list management web application with NoSQL
+                  database!
                 </p>
                 <p>Role</p>
               </Col>
@@ -52,7 +52,7 @@ const Work = () => {
           </Col>
           <Col md={6}>
             <Row>
-              <Col md={4}>
+              <Col md={6}>
                 <div
                   style={{
                     display: "flex",
@@ -63,8 +63,8 @@ const Work = () => {
                 >
                   <div
                     style={{
-                      width: "100px",
-                      height: "100px",
+                      width: "200px",
+                      height: "200px",
                       backgroundColor: "pink",
                     }}
                   >
@@ -72,143 +72,11 @@ const Work = () => {
                   </div>
                 </div>
               </Col>
-              <Col md={8}>
+              <Col md={6}>
                 <h3>Title</h3>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nostrum, soluta veniam esse aut perspiciatis eaqu.
-                </p>
-                <p>Role</p>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-        <Row style={{ marginBottom: "4rem" }}>
-          <Col md={6}>
-            <Row>
-              <Col md={4}>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "100px",
-                      height: "100px",
-                      backgroundColor: "pink",
-                    }}
-                  >
-                    pic
-                  </div>
-                </div>
-              </Col>
-              <Col md={8}>
-                <h3>Title</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nostrum, soluta veniam esse aut perspiciatis eaque.
-                </p>
-                <p>Role</p>
-              </Col>
-            </Row>
-          </Col>
-          <Col md={6}>
-            <Row>
-              <Col md={4}>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "100px",
-                      height: "100px",
-                      backgroundColor: "pink",
-                    }}
-                  >
-                    pic
-                  </div>
-                </div>
-              </Col>
-              <Col md={8}>
-                <h3>Title</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nostrum, soluta veniam esse aut perspiciatis eaqu.
-                </p>
-                <p>Role</p>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-        <Row style={{ marginBottom: "4rem" }}>
-          <Col md={6}>
-            <Row>
-              <Col md={4}>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "100px",
-                      height: "100px",
-                      backgroundColor: "pink",
-                    }}
-                  >
-                    pic
-                  </div>
-                </div>
-              </Col>
-              <Col md={8}>
-                <h3>Title</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nostrum, soluta veniam esse aut perspiciatis eaque.
-                </p>
-                <p>Role</p>
-              </Col>
-            </Row>
-          </Col>
-          <Col md={6}>
-            <Row>
-              <Col md={4}>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: "100px",
-                      height: "100px",
-                      backgroundColor: "pink",
-                    }}
-                  >
-                    pic
-                  </div>
-                </div>
-              </Col>
-              <Col md={8}>
-                <h3>Title</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nostrum, soluta veniam esse aut perspiciatis eaqu.
+                  A next-to-watch list management web application with NoSQL
+                  database!
                 </p>
                 <p>Role</p>
               </Col>
