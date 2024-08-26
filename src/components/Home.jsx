@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <main
       style={{
-        padding: "2rem 2rem 0 2rem",
+        padding: "0 2rem",
       }}
     >
       <section
