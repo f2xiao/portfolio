@@ -28,7 +28,7 @@ const Work = () => {
         name: "Brainflix",
         description: "A video streaming platform with JSON storage!",
         role: "Frontend Developer",
-        url: "https://github.com/user-attachments/assets/61b332a3-da11-40dd-968c-91ff0dd8535a",
+        url: "https://private-user-images.githubusercontent.com/25191617/361159634-0a460969-d18e-43af-a54c-5f27a2b94566.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY1MjU5MjgsIm5iZiI6MTcyNjUyNTYyOCwicGF0aCI6Ii8yNTE5MTYxNy8zNjExNTk2MzQtMGE0NjA5NjktZDE4ZS00M2FmLWE1NGMtNWYyN2EyYjk0NTY2LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE2VDIyMjcwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTlhMTIyNWI4MjYzNWVkOTg0ZTgwZGVlODI1MzczZWJkODJhYTAwOWE4N2QyZTA2NmUwZjU4ZWU1OGM0ZDJkNGQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ntAWnQP7Nre4p4AlQHrli8wuw0x7jRB2U9yZ_xM4cGc",
         website: "https://brain-flix.onrender.com",
       },
       {
