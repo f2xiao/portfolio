@@ -15,7 +15,7 @@ function Section({ id, children }) {
   let location = useLocation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  console.log(id, isInView);
+  // console.log(id, isInView);
   return (
     <section
       id={id}
