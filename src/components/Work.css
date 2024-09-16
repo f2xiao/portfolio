@@ -1,3 +1,7 @@
 .work__links {
   text-decoration: none;
 }
+
+.work__links:hover {
+  text-decoration: underline;
+}

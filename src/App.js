@@ -14,6 +14,17 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <footer
+        style={{
+          textAlign: "center",
+          marginTop: "-1rem",
+          paddingBottom: "1rem",
+        }}
+      >
+        {" "}
+        {"Copyright © Fangfang "}
+        {new Date().getFullYear()}
+      </footer>
     </Router>
   );
 }

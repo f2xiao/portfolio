@@ -7,6 +7,9 @@ import "react-vertical-timeline-component/style.min.css";
 import "./Experiences.css";
 import SectionTitle from "./SectionTitle";
 import WorkIcon from "./WorkIcon";
+import codingIcon from "../assets/icons/coding.gif";
+import readingIcon from "../assets/icons/reading.gif";
+import engineeringIcon from "../assets/icons/engineering.gif";
 
 const Experiences = () => {
   const experiences = [
@@ -18,6 +21,7 @@ const Experiences = () => {
         "Desgined and created websites for small bussinesses. Currently working on the offical website of a consulting company. \n",
         "Led client meetings and served as the primary point of contact, effectively communicating project progress, requirements, and updates, ensuring client satisfaction and alignment with their goals",
       ],
+      icon: codingIcon,
     },
     {
       time: "FEB 2024 - MAY 2024",
@@ -26,6 +30,7 @@ const Experiences = () => {
       details: [
         "After self-teaching for 1 year, I finally joined the Brainstation coding bootcamp and spent 800 hours on coding.",
       ],
+      icon: codingIcon,
     },
     {
       time: "MAR 2023 - FEB 2024",
@@ -35,6 +40,7 @@ const Experiences = () => {
         "Took online course such as CS50 and CS61B, then vaious web development course on Udemy, Frontend Masters and Fullstackopen. \n",
         "Took course about linux, docker, containers on kodekloud.",
       ],
+      icon: readingIcon,
     },
     {
       time: "MAR 2017 - FEB 2020",
@@ -43,6 +49,7 @@ const Experiences = () => {
       details: [
         "I worked for automotive and aerospace suppliers for 3 years and went through various positions: mechanical engineer, project engineer, metallurgist lab assistant,\nDuring this time, I accumulated a great deal of engineering experience and communication skills",
       ],
+      icon: engineeringIcon,
     },
   ];
   const bgColor = "white";
@@ -67,7 +74,7 @@ const Experiences = () => {
               }}
               date={e.time}
               iconStyle={styleObj}
-              icon={<WorkIcon />}
+              icon={<WorkIcon iconUrl={e.icon} />}
             >
               <h3 className="vertical-timeline-element-title">{e.title}</h3>
               <h4 className="vertical-timeline-element-subtitle">

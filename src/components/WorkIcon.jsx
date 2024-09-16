@@ -1,12 +1,15 @@
-import React from 'react'
-import icon from "../assets/icons/coding.gif"
+import React from "react";
 
-const WorkIcon = () => {
+const WorkIcon = ({ iconUrl }) => {
   return (
     <div>
-        <img style={{width:"2.5rem", borderRadius:"50%"}} src={icon} alt="icon" />
+      <img
+        style={{ width: "2.5rem", borderRadius: "50%" }}
+        src={iconUrl}
+        alt="icon"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default WorkIcon
+export default WorkIcon;
