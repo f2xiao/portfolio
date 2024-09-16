@@ -19,7 +19,7 @@ function NavBar() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
-          {["work", "about", "experience", "contact"].map((name) => (
+          {["work", "experience", "contact"].map((name) => (
             <Nav.Link href={`#${name}`} key={name}>
               {name}
             </Nav.Link>
@@ -27,7 +27,7 @@ function NavBar() {
           <Nav.Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://f2xiao.github.io"
+            href="https://f2xiao.github.io/site"
           >
             Blogs
           </Nav.Link>

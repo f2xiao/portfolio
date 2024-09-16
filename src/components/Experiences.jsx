@@ -8,7 +8,6 @@ import "./Experiences.css";
 import SectionTitle from "./SectionTitle";
 import WorkIcon from "./WorkIcon";
 
-
 const Experiences = () => {
   const experiences = [
     {
@@ -16,7 +15,7 @@ const Experiences = () => {
       title: "Freelancer",
       subtitle: "Tech Industry",
       details: [
-        "Desgined and created websites for small bussinesses. Currently working on the offical website of a consulting company. ",
+        "Desgined and created websites for small bussinesses. Currently working on the offical website of a consulting company. \n",
         "Led client meetings and served as the primary point of contact, effectively communicating project progress, requirements, and updates, ensuring client satisfaction and alignment with their goals",
       ],
     },
@@ -25,26 +24,24 @@ const Experiences = () => {
       title: "Bootcamper",
       subtitle: "Tech Industry",
       details: [
-        " ",
-        "",
+        "After self-teaching for 1 year, I finally joined the Brainstation coding bootcamp and spent 800 hours on coding.",
       ],
     },
     {
-      time: "MAR 2022 - FEB 2024",
+      time: "MAR 2023 - FEB 2024",
       title: "Self Learner",
       subtitle: "Tech Industry",
       details: [
-        " ",
-        "",
+        "Took online course such as CS50 and CS61B, then vaious web development course on Udemy, Frontend Masters and Fullstackopen. \n",
+        "Took course about linux, docker, containers on kodekloud.",
       ],
     },
     {
-      time: "MAR 2020 - FEB 2022",
-      title: "Technical Sales",
-      subtitle: "Small Business",
+      time: "MAR 2017 - FEB 2020",
+      title: "Mechanical Engineer Candidate",
+      subtitle: "Engineering Field",
       details: [
-        "Technical Sales by the day time, metal products selling to constructions and factories, family business ran for 20 years since 2000s",
-        "Property manager by the casual time, successfully rent out apartment units within 1 week",
+        "I worked for automotive and aerospace suppliers for 3 years and went through various positions: mechanical engineer, project engineer, metallurgist lab assistant,\nDuring this time, I accumulated a great deal of engineering experience and communication skills",
       ],
     },
   ];
@@ -57,9 +54,32 @@ const Experiences = () => {
   return (
     <div style={{ minHeight: "100vh" }}>
       <SectionTitle title="Experiences" />
+      <p style={{ textAlign: "center" }}> My previous jobs and experiences</p>
       <div style={{ width: "80%", margin: "0 auto" }}>
         <VerticalTimeline lineColor="#c3c3c3">
-          <VerticalTimelineElement
+          {experiences.map((e, i) => (
+            <VerticalTimelineElement
+              key={i}
+              className="vertical-timeline-element--work"
+              contentStyle={styleObj}
+              contentArrowStyle={{
+                borderRight: `7px solid ${bgColor}`,
+              }}
+              date={e.time}
+              iconStyle={styleObj}
+              icon={<WorkIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">{e.title}</h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                {e.subtitle}
+              </h4>
+              <p>
+                <span className="vertical-timeline-content">{e.details}</span>
+              </p>
+            </VerticalTimelineElement>
+          ))}
+
+          {/* <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={styleObj}
             contentArrowStyle={{
@@ -69,14 +89,10 @@ const Experiences = () => {
             iconStyle={styleObj}
             icon={<WorkIcon />}
           >
-            <h3 className="vertical-timeline-element-title">
-              title
-            </h3>
+            <h3 className="vertical-timeline-element-title">title</h3>
             <h4 className="vertical-timeline-element-subtitle">subtitle</h4>
-            <p>
-              details
-            </p>
-          </VerticalTimelineElement>
+            <p>details</p>
+          </VerticalTimelineElement> */}
         </VerticalTimeline>
       </div>
     </div>

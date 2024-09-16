@@ -6,3 +6,12 @@
     margin-left: -20px;
   }
 }
+
+.vertical-timeline-element-subtitle {
+  font-weight: normal;
+  color: grey;
+}
+.vertical-timeline-content {
+  font-weight: normal;
+  white-space: pre-line;
+}

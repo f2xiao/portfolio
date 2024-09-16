@@ -19,3 +19,9 @@ header {
 main {
   padding: 1.5rem;
 }
+
+a,
+a:active,
+a:visited {
+  color: rgba(0, 0, 0, 0.65);
+}
