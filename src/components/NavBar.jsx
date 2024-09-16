@@ -34,7 +34,7 @@ function NavBar() {
           <Nav.Link
             target="_blank"
             rel="noopener noreferrer"
-            to="/Fangfang Xiao Resume.pdf"
+            href="https://f2xiao.github.io/Fangfang%20Xiao%20Resume.pdf"
           >
             Resume
           </Nav.Link>
