@@ -91,7 +91,7 @@ const Skills = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.1, delay: 2 }}
     >
-      <h5 style={{ fontWeight: 300, paddingBottom: "5rem" }}>
+      <h5 style={{ fontWeight: 300, paddingBottom: "3rem" }}>
         Welcome to my personal website! Here you can learn more about me and my
         work.
       </h5>
@@ -99,18 +99,17 @@ const Skills = () => {
         {Object.keys(mySkills).map((key, i) => {
           return (
             <div key={i} style={{ flexBasis: "30%" }}>
-              <h4 style={{ textTransform: "uppercase" }}>{key + " skills"}</h4>
+              <h4 style={{ textTransform: "uppercase", paddingBottom:"1.5rem" }}>{key + " skills"}</h4>
               <div
+               className="skills_container"
                 style={{
                   display: "flex",
                   gap: "0.5rem",
                   flexWrap: "wrap",
                   alignContent: "center",
                   justifyContent: "center",
-                  // border: "1px solid black",
                   boxShadow: "0 0.25rem 0.5rem rgba(0, 0, 0, 0.25)",
                   height: "100%",
-                  // paddingTop: "1rem",
                   borderRadius: "1rem",
                 }}
               >

@@ -6,16 +6,45 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import "./Experiences.css";
 import SectionTitle from "./SectionTitle";
+import WorkIcon from "./WorkIcon";
+
 
 const Experiences = () => {
   const experiences = [
     {
       time: "June 2024 - Present",
       title: "Freelancer",
-      subtitle: "Full Stack Developer",
+      subtitle: "Tech Industry",
       details: [
-        "Desgined and created websites for small bussinesses. Currently working on the offical website of mobility service company. ",
+        "Desgined and created websites for small bussinesses. Currently working on the offical website of a consulting company. ",
         "Led client meetings and served as the primary point of contact, effectively communicating project progress, requirements, and updates, ensuring client satisfaction and alignment with their goals",
+      ],
+    },
+    {
+      time: "FEB 2024 - MAY 2024",
+      title: "Bootcamper",
+      subtitle: "Tech Industry",
+      details: [
+        " ",
+        "",
+      ],
+    },
+    {
+      time: "MAR 2022 - FEB 2024",
+      title: "Self Learner",
+      subtitle: "Tech Industry",
+      details: [
+        " ",
+        "",
+      ],
+    },
+    {
+      time: "MAR 2020 - FEB 2022",
+      title: "Technical Sales",
+      subtitle: "Small Business",
+      details: [
+        "Technical Sales by the day time, metal products selling to constructions and factories, family business ran for 20 years since 2000s",
+        "Property manager by the casual time, successfully rent out apartment units within 1 week",
       ],
     },
   ];
@@ -27,23 +56,6 @@ const Experiences = () => {
   };
   return (
     <div style={{ minHeight: "100vh" }}>
-      {/* <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "1rem",
-          margin: "0 auto",
-          width: "90%",
-        }}
-      >
-        <hr style={{ width: "33.3%" }} />
-        <h2 style={{ textAlign: "center", padding: "3rem 0", width: "33.3%" }}>
-          Experiences
-        </h2>
-        <hr style={{ width: "33.3%" }} />
-      </div> */}
-
       <SectionTitle title="Experiences" />
       <div style={{ width: "80%", margin: "0 auto" }}>
         <VerticalTimeline lineColor="#c3c3c3">
@@ -53,82 +65,16 @@ const Experiences = () => {
             contentArrowStyle={{
               borderRight: `7px solid ${bgColor}`,
             }}
-            date="2011 - present"
+            date="time"
             iconStyle={styleObj}
-            // icon={<WorkIcon />}
+            icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">
-              Creative Director
+              title
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+            <h4 className="vertical-timeline-element-subtitle">subtitle</h4>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
-              eligendi eum neque labore iste, voluptas odio quos vitae in
-              commodi cumque iusto perspiciatis ex nostrum eveniet, fuga
-              exercitationem cum earum?
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={styleObj}
-            contentArrowStyle={{
-              borderRight: `7px solid ${bgColor}`,
-            }}
-            date="2011 - present"
-            iconStyle={styleObj}
-            // icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Creative Director
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
-              eligendi eum neque labore iste, voluptas odio quos vitae in
-              commodi cumque iusto perspiciatis ex nostrum eveniet, fuga
-              exercitationem cum earum?
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={styleObj}
-            contentArrowStyle={{
-              borderRight: `7px solid ${bgColor}`,
-            }}
-            date="2011 - present"
-            iconStyle={styleObj}
-            // icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Creative Director
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
-              eligendi eum neque labore iste, voluptas odio quos vitae in
-              commodi cumque iusto perspiciatis ex nostrum eveniet, fuga
-              exercitationem cum earum?
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={styleObj}
-            contentArrowStyle={{
-              borderRight: `7px solid ${bgColor}`,
-            }}
-            date="2011 - present"
-            iconStyle={styleObj}
-            // icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Creative Director
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
-              eligendi eum neque labore iste, voluptas odio quos vitae in
-              commodi cumque iusto perspiciatis ex nostrum eveniet, fuga
-              exercitationem cum earum?
+              details
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
