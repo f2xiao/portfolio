@@ -2,7 +2,6 @@ import React from "react";
 import SectionTitle from "./SectionTitle";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Work.css";
-import icon from "../assets/icons/coding.gif";
 
 const Work = () => {
   const workArrays = [
