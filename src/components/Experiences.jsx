@@ -37,7 +37,7 @@ const Experiences = () => {
       title: "Self Learner",
       subtitle: "Tech Industry",
       details: [
-        "Took online course such as CS50 and CS61B, then vaious web development course on Udemy, Frontend Masters and Fullstackopen. \n",
+        "Took online courses such as CS50 and CS61B, then various web development course on Udemy, Frontend Masters and Fullstackopen. \n",
         "Took course about linux, docker, containers on kodekloud.",
       ],
       icon: readingIcon,
