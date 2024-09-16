@@ -10,7 +10,7 @@ npm run build
 cd build
 
 # if you are deploying to a custom domain
-echo 'www.fangfangxiao.me' > CNAME
+echo 'fangfangxiao.me' > CNAME
 
 git init
 # change the default branch name to main
