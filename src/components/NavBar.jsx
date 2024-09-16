@@ -35,6 +35,8 @@ function NavBar() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://f2xiao.github.io/Fangfang%20Xiao%20Resume.pdf"
+            style={{ background: "pink", borderRadius: "5px" }}
+            className="cta__link"
           >
             Resume
           </Nav.Link>
