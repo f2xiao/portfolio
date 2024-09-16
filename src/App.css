@@ -6,9 +6,10 @@
 html {
   scroll-behavior: smooth;
 }
-/* body {
-  padding: 1.5rem;
-} */
+body {
+  /* background-color: #1b1c1b !important; */
+  /* color: #dbdfdf !important; */
+}
 
 header {
   /* background: #3c3c3c; */

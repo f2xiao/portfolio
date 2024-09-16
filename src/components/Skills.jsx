@@ -95,22 +95,41 @@ const Skills = () => {
         Welcome to my personal website! Here you can learn more about me and my
         work.
       </h5>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "1rem",
+          flexWrap: "wrap",
+        }}
+      >
         {Object.keys(mySkills).map((key, i) => {
           return (
-            <div key={i} style={{ flexBasis: "30%" }}>
-              <h4 style={{ textTransform: "uppercase", paddingBottom:"1.5rem" }}>{key + " skills"}</h4>
+            <div
+              className="skills_wrapper"
+              key={i}
+              style={{
+                flexBasis: "30%",
+                minWidth: "20rem",
+              }}
+            >
+              <h4
+                style={{ textTransform: "uppercase", paddingBottom: "1.5rem" }}
+              >
+                {key + " skills"}
+              </h4>
               <div
-               className="skills_container"
+                className="skills_container"
                 style={{
                   display: "flex",
                   gap: "0.5rem",
                   flexWrap: "wrap",
                   alignContent: "center",
+                  alignItems: "center",
                   justifyContent: "center",
                   boxShadow: "0 0.25rem 0.5rem rgba(0, 0, 0, 0.25)",
-                  height: "100%",
                   borderRadius: "1rem",
+                  padding: "1rem 0",
                 }}
               >
                 {mySkills[key].map((skill, j) => {

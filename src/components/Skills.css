@@ -6,11 +6,13 @@
 }
 
 .skills_container {
-  will-change: filter;
-  transition: filter 300ms;
-  background-color: rgba(27, 28, 27, 0.6);
+  @media (min-width: 720px) {
+    height: calc(100% - 3.125rem);
+  }
+
+  transition: ease-in-out 500ms;
 }
 
 .skills_container:hover {
-  filter: drop-shadow(0 0 2em  #646cffaa);
-} 
+  transform: scale(0.9);
+}
